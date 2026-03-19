@@ -37,7 +37,7 @@ It is designed as an educational project to demonstrate **GUI development, objec
 ID-Card-Generator/
 │
 ├── src/
-│   └── com/idcard/
+│   └── idcard/
 │       ├── main/           # Entry point of application
 │       ├── ui/             # GUI components (Swing Frames)
 │       ├── model/          # Data models (User, ID info)
@@ -64,26 +64,64 @@ ID-Card-Generator/
 
 ---
 
-### 🔧 Installation & Run
+## ▶️ How to Run the Project
 
-1. Clone the repository:
+### 🔹 Method 1: Using Terminal (Recommended)
 
-```bash
-git clone https://github.com/your-username/id-card-generator.git
-```
-
-2. Open the project in VS Code
-
-3. Navigate to:
-
-```
-src/com/idcard/main/MainApp.java
-```
-
-4. Run the application:
+1. Open terminal and navigate to the `src` folder:
 
 ```bash
-Run MainApp.java
+cd path/to/ID-Card-Generator/src
+```
+
+2. Compile all Java files:
+
+```bash
+javac idcard/**/*.java
+```
+
+3. Run the application:
+
+```bash
+java idcard.main.MainApp
+```
+
+---
+
+### 🔹 Method 2: Compile Specific Files
+
+```bash
+cd path/to/ID-Card-Generator/src
+
+javac idcard/main/MainApp.java idcard/ui/LoginFrame.java
+java idcard.main.MainApp
+```
+
+---
+
+### 🔹 Method 3: Using VS Code
+
+1. Open project in VS Code
+2. Navigate to:
+
+```
+src/idcard/main/MainApp.java
+```
+
+3. Right-click on `MainApp.java`
+4. Click **"Run Java"**
+
+---
+
+## ⚠️ Important Notes
+
+* Always run commands from the **`src` folder**
+* Do NOT run from inside `main/` or `ui/` folders
+* Ensure package names match folder structure:
+
+```java
+package idcard.main;
+package idcard.ui;
 ```
 
 ---

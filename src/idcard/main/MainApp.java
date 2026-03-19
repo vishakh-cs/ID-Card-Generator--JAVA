@@ -1,7 +1,9 @@
 package idcard.main;
 
+import idcard.ui.LoginFrame;
+
 public class MainApp {
-    public static void main(String[] args){
-        new MainFrame();
+    public static void main(String[] args) {
+        new LoginFrame();
     }
 }
